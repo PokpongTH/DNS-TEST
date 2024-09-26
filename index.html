@@ -10,15 +10,14 @@
     <style>
         .container {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-left: 50px; /* ระยะห่างจากด้านซ้าย */
+            flex-direction: row; /* ทำให้รูปและข้อความอยู่ในแนวนอน */
+            align-items: center;
         }
 
         .text {
             font-size: 50px;
             font-family: 'Srisakdi', cursive;
-            margin-top: 20px;
+            margin-left: 50px; /* ระยะห่างของตัวหนังสือจากรูป */
         }
 
         .highlight {
@@ -29,14 +28,16 @@
 </head>
 <body>
     <div class="container">
-        <img src="IMG_4348.jpeg" alt="รูปนะจ๊ะอิอิ">
-        <p class="text highlight">ลหนอ</p>
-        <p class="text">
-            เมื่อยามเย็น เห็นภาพ น่าหลงใหล<br>
-            ข้าจึงใคร่ สงสัย ผู้ใดหนอ<br>
-            เปิดคอมเม้น ซักถาม ไม่รีรอ<br>
-            พ่อรูปหล่อ ลิ้งอยู่ไหน ไอ้สันดาน
-        </p>
+        <img src="IMG_4348.jpeg" alt="รูปนะจ๊ะอิอิ" style="max-width:200px;">
+        <div class="text-container">
+            <p class="text highlight">ลหนอ</p>
+            <p class="text">
+                เมื่อยามเย็น เห็นภาพ น่าหลงใหล<br>
+                ข้าจึงใคร่ สงสัย ผู้ใดหนอ<br>
+                เปิดคอมเม้น ซักถาม ไม่รีรอ<br>
+                พ่อรูปหล่อ ลิ้งอยู่ไหน ไอ้สันดาน
+            </p>
+        </div>
     </div>
 </body>
 </html>
